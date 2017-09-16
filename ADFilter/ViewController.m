@@ -56,14 +56,14 @@
 
 - (NSString *)filter:(ADFilter *)filter itemTitleAtIndexPath:(NSIndexPath *)indexPath zone:(NSInteger)zone {
     if (zone == 1) {
-        NSString *tt = [NSString stringWithFormat:@"%ld - %ld zozooz", indexPath.row, indexPath.section];
+        NSString *tt = [NSString stringWithFormat:@"%ld - %ld zozooz", (long)indexPath.row, (long)indexPath.section];
         return tt;
     }
     return @"zooozozo";
 }
 
 - (void)filter:(ADFilter *)filter didSelectedItemAtIndexPath:(NSIndexPath *)indexPath zone:(NSInteger)zone {
-    NSLog(@"%ld", indexPath.row);
+    NSLog(@"%ld", (long)indexPath.row);
     if (zone == 1) {
         [filter setTitle:@"zzzass" zone:zone];
         [filter dismissMenuViewAtZone:zone animation:NO];
