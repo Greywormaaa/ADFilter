@@ -24,7 +24,7 @@
 - (void)selectedItemAtSections:(NSArray <NSNumber *> *)sections zone:(NSInteger)zone;
 - (void)showMenuViewAtZone:(NSInteger)zone;
 - (void)dismissMenuViewAtZone:(NSInteger)zone animation:(BOOL)animation;
-- (void)dismissCurrentMneu;
+- (void)dismissCurrentMneu:(BOOL)animation;
 - (void)reloadData;
 @end
 

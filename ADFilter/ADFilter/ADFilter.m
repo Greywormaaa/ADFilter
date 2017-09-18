@@ -197,11 +197,11 @@
     [_collectionView deselectItemAtIndexPath:[NSIndexPath indexPathForRow:zone inSection:0] animated:YES];
 }
 
-- (void)dismissCurrentMneu {
+- (void)dismissCurrentMneu:(BOOL)animation {
     if (_selectedIndex == NSNotFound) {
         return;
     }
-    [self dismissMenuViewAtZone:_selectedIndex animation:NO];
+    [self dismissMenuViewAtZone:_selectedIndex animation:animation];
 }
 
 - (void)menuViewTouchTheClearing {
