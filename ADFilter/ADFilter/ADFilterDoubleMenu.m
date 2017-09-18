@@ -34,7 +34,7 @@ NSString *const adFilterDoubleMenuChildCellReuseIdentifier = @"adFilterDoubleMen
     _parentTableView.showsVerticalScrollIndicator = NO;
     _parentTableView.delegate = self;
     _parentTableView.dataSource = self;
-    _parentTableView.separatorColor = kAdFilterHexColor(0xdddddd);
+    _parentTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [_parentTableView registerClass:[ADFilterDoubleMenuParentCell class] forCellReuseIdentifier:adFilterDoubleMenuParentCellReuseIdentifier];
     [self.contentView addSubview:_parentTableView];
     
@@ -43,7 +43,7 @@ NSString *const adFilterDoubleMenuChildCellReuseIdentifier = @"adFilterDoubleMen
     _childTableView.showsVerticalScrollIndicator = NO;
     _childTableView.delegate = self;
     _childTableView.dataSource = self;
-    _childTableView.separatorColor = kAdFilterHexColor(0xdddddd);
+    _childTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [_childTableView registerClass:[ADFilterDoubleMenuChildCell class] forCellReuseIdentifier:adFilterDoubleMenuChildCellReuseIdentifier];
     [self.contentView addSubview:_childTableView];
     

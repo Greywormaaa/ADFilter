@@ -9,6 +9,7 @@
 #import "ADFilter.h"
 #import "ADFilterCollectionItem.h"
 #import "ADFilterMenu.h"
+#import "ADFilterCommon.h"
 
 @interface ADFilter ()
 <
@@ -20,6 +21,7 @@
 >
 @property (nonatomic, strong)UICollectionView *collectionView;
 @property (nonatomic, assign)NSInteger selectedIndex;
+@property (nonatomic, strong)UIImageView *bottomLine;
 @end
 
 @implementation ADFilter
@@ -44,6 +46,10 @@
     _collectionView.dataSource = self;
     [self addSubview:_collectionView];
     
+    _bottomLine = [[UIImageView alloc] init];
+    _bottomLine.backgroundColor = kAdFilterHexColor(0xdddddd);
+    [self addSubview:_bottomLine];
+    
     self.itemClassName = NSStringFromClass([ADFilterUnitTitleItem class]);
     
     [self makeConstraints];
@@ -56,6 +62,14 @@
     NSLayoutConstraint *collectionRight = [NSLayoutConstraint constraintWithItem:_collectionView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1.0 constant:0];
     NSLayoutConstraint *collectionBottom = [NSLayoutConstraint constraintWithItem:_collectionView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0];
     [self addConstraints:@[collectionTop, collectionLeft, collectionRight, collectionBottom]];
+    
+    _bottomLine.translatesAutoresizingMaskIntoConstraints = NO;
+    NSLayoutConstraint *bottomLineBottom = [NSLayoutConstraint constraintWithItem:_bottomLine attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0];
+    NSLayoutConstraint *bottomLineLeft = [NSLayoutConstraint constraintWithItem:_bottomLine attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0];
+    NSLayoutConstraint *bottomLineRight = [NSLayoutConstraint constraintWithItem:_bottomLine attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1.0 constant:0];
+    NSLayoutConstraint *bottomLineHeight = [NSLayoutConstraint constraintWithItem:_bottomLine attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil  attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:0.5];
+    [self addConstraints:@[bottomLineLeft, bottomLineRight, bottomLineBottom]];
+    [_bottomLine addConstraint:bottomLineHeight];
 }
 
 - (void)setItemClassName:(NSString *)itemClassName {
@@ -180,6 +194,14 @@
     ADFilterMenu *menu = _menuArray[zone];
     [menu disappearWithAnimation:animation];
     _selectedIndex = NSNotFound;
+    [_collectionView deselectItemAtIndexPath:[NSIndexPath indexPathForRow:zone inSection:0] animated:YES];
+}
+
+- (void)dismissCurrentMneu {
+    if (_selectedIndex == NSNotFound) {
+        return;
+    }
+    [self dismissMenuViewAtZone:_selectedIndex animation:YES];
 }
 
 - (void)menuViewTouchTheClearing {

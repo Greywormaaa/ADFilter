@@ -17,6 +17,7 @@
 @implementation ADFilterDoubleMenuParentCell
 {
     UILabel *_contentLab;
+    UIImageView *_bottomLine;
 }
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -42,6 +43,10 @@
     _contentLab.textAlignment = NSTextAlignmentCenter;
     [self.contentView addSubview:_contentLab];
     
+    _bottomLine = [[UIImageView alloc] init];
+    _bottomLine.backgroundColor = kAdFilterHexColor(0xdddddd);
+    [self.contentView addSubview:_bottomLine];
+    
     [self makeConstraints];
 }
 
@@ -53,6 +58,14 @@
     NSLayoutConstraint *contentLabRight = [NSLayoutConstraint constraintWithItem:_contentLab attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeRight multiplier:1.0 constant:0];
     NSLayoutConstraint *contentLabBottom = [NSLayoutConstraint constraintWithItem:_contentLab attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0];
     [self.contentView addConstraints:@[contentLabTop, contentLabLeft, contentLabRight, contentLabBottom]];
+    
+    _bottomLine.translatesAutoresizingMaskIntoConstraints = NO;
+    NSLayoutConstraint *bottomLineBottom = [NSLayoutConstraint constraintWithItem:_bottomLine attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0];
+    NSLayoutConstraint *bottomLineLeft = [NSLayoutConstraint constraintWithItem:_bottomLine attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeLeft multiplier:1.0 constant:0];
+    NSLayoutConstraint *bottomLineRight = [NSLayoutConstraint constraintWithItem:_bottomLine attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeRight multiplier:1.0 constant:0];
+    NSLayoutConstraint *bottomLineHeight = [NSLayoutConstraint constraintWithItem:_bottomLine attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil  attribute:NSLayoutAttributeNotAnAttribute multiplier:1.0 constant:0.5];
+    [self.contentView addConstraints:@[bottomLineLeft, bottomLineRight, bottomLineBottom]];
+    [_bottomLine addConstraint:bottomLineHeight];
 }
 
 - (void)fillData:(id)data {
