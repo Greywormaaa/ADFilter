@@ -201,7 +201,7 @@
     if (_selectedIndex == NSNotFound) {
         return;
     }
-    [self dismissMenuViewAtZone:_selectedIndex animation:YES];
+    [self dismissMenuViewAtZone:_selectedIndex animation:NO];
 }
 
 - (void)menuViewTouchTheClearing {

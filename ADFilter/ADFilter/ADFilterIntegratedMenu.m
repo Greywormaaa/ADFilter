@@ -144,4 +144,10 @@ NSString *const adFilterIntegratedMenuReuseViewReuseIdentifier = @"adFilterInteg
     }
     [item fillData:content];
 }
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    if ([self.delegate respondsToSelector:@selector(filterMenu:didSelectedItemAtIndexPath:)]) {
+        [self.delegate filterMenu:self didSelectedItemAtIndexPath:indexPath];
+    }
+}
 @end
