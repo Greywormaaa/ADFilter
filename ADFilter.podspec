@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "ADFilter"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "筛选控件"
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source = { :git => "https://github.com/heLooksLikeADog/ADFilter.git", :tag => "0.0.5" }
+  s.source = { :git => "https://github.com/heLooksLikeADog/ADFilter.git", :tag => "0.0.6" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,10 +91,11 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "ADFilter", "ADFilter/ADFilter/ADFilter/**/*.{h,m}"
+  s.source_files  = "ADFilter", "ADFilter/ADFilter/**/AD*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
+
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

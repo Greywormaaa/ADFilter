@@ -7,8 +7,8 @@
 //
 
 #import "ADFilterFactory.h"
-@class ADFilterDoubleMenu;
+@class ADFilterMenu;
 
 @interface ADFilterFactory (Double)
-+ (ADFilterDoubleMenu *)doubleMenuWithTitle:(NSString *)title;
++ (ADFilterMenu *)doubleMenuWithTitle:(NSString *)title;
 @end

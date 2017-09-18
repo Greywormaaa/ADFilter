@@ -10,7 +10,7 @@
 #import "ADFilterDoubleMenu.h"
 
 @implementation ADFilterFactory (Double)
-+ (ADFilterDoubleMenu *)doubleMenuWithTitle:(NSString *)title {
++ (ADFilterMenu *)doubleMenuWithTitle:(NSString *)title {
     ADFilterDoubleMenu *menu = [[ADFilterDoubleMenu alloc] init];
     menu.title = title;
     return menu;

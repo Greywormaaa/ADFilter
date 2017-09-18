@@ -10,7 +10,7 @@
 #import "ADFilterIntegratedMenu.h"
 
 @implementation ADFilterFactory (Integrated)
-+ (ADFilterIntegratedMenu *)integratedMenuWithTitle:(NSString *)title {
++ (ADFilterMenu *)integratedMenuWithTitle:(NSString *)title {
     ADFilterIntegratedMenu *menu = [[ADFilterIntegratedMenu alloc] init];
     menu.title = title;
     return menu;

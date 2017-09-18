@@ -10,7 +10,7 @@
 #import "ADFilterSingleMenu.h"
 
 @implementation ADFilterFactory (Single)
-+ (ADFilterSingleMenu *)singleMenuWithTitle:(NSString *)title {
++ (ADFilterMenu *)singleMenuWithTitle:(NSString *)title {
     ADFilterSingleMenu *singleMenu = [[ADFilterSingleMenu alloc] init];
     singleMenu.title = title;
     return singleMenu;

@@ -154,8 +154,8 @@
     ADFilterMenu *menu = _menuArray[indexPath.row];
     NSString *title = menu.title;
     ADFilterCollectionItem *item = (ADFilterCollectionItem *)cell;
-    if ([item respondsToSelector:@selector(fillData:)]) {
-        [item fillData:title];
+    if ([item respondsToSelector:@selector(fillContent:)]) {
+        [item fillContent:title];
     }
 }
 

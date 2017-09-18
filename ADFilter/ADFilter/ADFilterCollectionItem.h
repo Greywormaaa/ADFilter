@@ -12,7 +12,7 @@
     ad base collection item
  */
 @interface ADFilterCollectionItem : UICollectionViewCell
-- (void)fillData:(id)data;
+- (void)fillContent:(NSString *)content;
 @end
 
 /**

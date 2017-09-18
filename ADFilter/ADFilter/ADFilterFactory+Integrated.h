@@ -7,7 +7,7 @@
 //
 
 #import "ADFilterFactory.h"
-@class ADFilterIntegratedMenu;
+@class ADFilterMenu;
 @interface ADFilterFactory (Integrated)
-+ (ADFilterIntegratedMenu *)integratedMenuWithTitle:(NSString *)title;
++ (ADFilterMenu *)integratedMenuWithTitle:(NSString *)title;
 @end

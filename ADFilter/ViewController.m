@@ -22,9 +22,9 @@
     [self.view addSubview:_filter];
     _filter.delegate = self;
     _filter.dataSource = self;
-    ADFilterSingleMenu *menu = [ADFilterFactory singleMenuWithTitle:@"你好"];
-    ADFilterDoubleMenu *menu2 = [ADFilterFactory doubleMenuWithTitle:@"double"];
-    ADFilterIntegratedMenu *menu3 = [ADFilterFactory integratedMenuWithTitle:@"交换机"];
+    ADFilterMenu *menu = [ADFilterFactory singleMenuWithTitle:@"你好"];
+    ADFilterMenu *menu2 = [ADFilterFactory doubleMenuWithTitle:@"double"];
+    ADFilterMenu *menu3 = [ADFilterFactory integratedMenuWithTitle:@"交换机"];
     [_filter addMenu:menu];
     [_filter addMenu:menu2];
     [_filter addMenu:menu3];

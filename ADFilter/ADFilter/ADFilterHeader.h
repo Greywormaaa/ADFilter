@@ -10,6 +10,7 @@
 #define ADFilterHeader_h
 
 #import "ADFilter.h"
+#import "ADFilterMenu.h"
 #import "ADFilterFactory+Single.h"
 #import "ADFilterFactory+Double.h"
 #import "ADFilterFactory+Integrated.h"

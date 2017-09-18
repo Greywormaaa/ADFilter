@@ -11,7 +11,7 @@
 #pragma mark - base
 #pragma mark -
 @implementation ADFilterCollectionItem
-- (void)fillData:(id)data{}
+- (void)fillContent:(NSString *)content {}
 @end
 
 #pragma mark - filter unit title
@@ -79,6 +79,13 @@
         return;
     }
     _titleLab.text = data;
+}
+
+- (void)fillContent:(NSString *)content {
+    if (!content) {
+        return;
+    }
+    _titleLab.text = content;
 }
 
 - (void)setSelected:(BOOL)selected {
