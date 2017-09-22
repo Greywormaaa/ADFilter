@@ -121,6 +121,14 @@ NSString *const adFilterDoubleMenuChildCellReuseIdentifier = @"adFilterDoubleMen
     return kAdFilterFloat(44);
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    return nil;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    return nil;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (tableView == _parentTableView) {
         ADFilterDoubleMenuParentCell *cell = [tableView dequeueReusableCellWithIdentifier:adFilterDoubleMenuParentCellReuseIdentifier forIndexPath:indexPath];

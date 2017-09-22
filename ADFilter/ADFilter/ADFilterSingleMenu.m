@@ -143,6 +143,14 @@ NSString *const adFilterMenuSingleViewCellReuseIdentifier = @"adFilterMenuSingle
     return kAdFilterFloat(44);
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    return nil;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    return nil;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     ADFilterMenuSingleViewCell *cell = [tableView dequeueReusableCellWithIdentifier:adFilterMenuSingleViewCellReuseIdentifier forIndexPath:indexPath];
     return cell;
