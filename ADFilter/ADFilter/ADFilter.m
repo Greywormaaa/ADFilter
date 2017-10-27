@@ -117,6 +117,18 @@
 
 - (void)reloadData {
     [_collectionView reloadData];
+    if (_selectedIndex != NSNotFound) {
+        [self dismissCurrentMneu:NO];
+    }
+}
+
+- (void)reloadDataZone:(NSInteger)zone {
+    [_collectionView reloadData];
+    if (_selectedIndex != NSNotFound) {
+        [_collectionView selectItemAtIndexPath:[NSIndexPath indexPathForRow:_selectedIndex inSection:0] animated:YES scrollPosition:UICollectionViewScrollPositionNone];
+    }
+    ADFilterMenu *menu = _menuArray[zone];
+    [menu reloadData];
 }
 
 #pragma mark - collection delegate

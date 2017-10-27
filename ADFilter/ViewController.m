@@ -11,11 +11,13 @@
 @interface ViewController ()<ADFilterDelegate, ADFilterDataSource>
 @property (nonatomic, strong)ADFilter *filter;
 @property (nonatomic, strong)NSArray *titles;
+@property (nonatomic, copy)NSString *meeee;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
+    _meeee = @"huahua";
     self.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
     [super viewDidLoad];
     _filter = [[ADFilter alloc] initWithFrame:CGRectMake(0, 64, CGRectGetWidth(self.view.frame), 36)];
@@ -51,15 +53,15 @@
     if (zone == 2) {
         return @"综合服务";
     }
-    return @"ghhhhh";
+    return @"别来别去";
 }
 
 - (NSString *)filter:(ADFilter *)filter itemTitleAtIndexPath:(NSIndexPath *)indexPath zone:(NSInteger)zone {
-    if (zone == 1) {
+    if (zone == 0) {
         NSString *tt = [NSString stringWithFormat:@"%ld - %ld zozooz", (long)indexPath.row, (long)indexPath.section];
         return tt;
     }
-    return @"zooozozo";
+    return _meeee;
 }
 
 - (void)filter:(ADFilter *)filter didSelectedItemAtIndexPath:(NSIndexPath *)indexPath zone:(NSInteger)zone {
@@ -68,5 +70,11 @@
         [filter setTitle:@"zzzass" zone:zone];
         [filter dismissMenuViewAtZone:zone animation:NO];
     }
+}
+
+- (void)filter:(ADFilter *)filter didSelectedItemAtSection:(NSInteger)section zone:(NSInteger)zone {
+    _meeee = @"上天下地";
+    ADFilterMenu *men = [filter menuWithZone:zone];
+    [men reloadChildData];
 }
 @end

@@ -26,6 +26,7 @@
 - (void)dismissMenuViewAtZone:(NSInteger)zone animation:(BOOL)animation;
 - (void)dismissCurrentMneu:(BOOL)animation;
 - (void)reloadData;
+- (void)reloadDataZone:(NSInteger)zone;
 @end
 
 @protocol ADFilterDelegate <NSObject>

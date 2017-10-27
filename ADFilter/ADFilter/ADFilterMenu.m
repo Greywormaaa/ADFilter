@@ -104,6 +104,10 @@
 
 }
 
+- (void)reloadChildData {
+    
+}
+
 - (void)disappearWithAnimation:(BOOL)animation {
     if (animation) {
         CGFloat contentHeight = [self contentHeight];

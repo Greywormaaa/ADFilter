@@ -90,6 +90,15 @@ NSString *const adFilterDoubleMenuChildCellReuseIdentifier = @"adFilterDoubleMen
     return indexPath.row;
 }
 
+- (void)reloadData {
+    [_parentTableView reloadData];
+    [_childTableView reloadData];
+}
+
+- (void)reloadChildData {
+    [_childTableView reloadData];
+}
+
 #pragma mark - table delegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if (tableView == _parentTableView) {
@@ -175,4 +184,5 @@ NSString *const adFilterDoubleMenuChildCellReuseIdentifier = @"adFilterDoubleMen
         }
     }
 }
+
 @end

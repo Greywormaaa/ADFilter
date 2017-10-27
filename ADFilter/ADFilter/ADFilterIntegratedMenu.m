@@ -28,6 +28,7 @@ NSString *const adFilterIntegratedMenuReuseViewReuseIdentifier = @"adFilterInteg
 }
 
 - (void)initialize {
+    
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:layout];
     _collectionView.delegate = self;
@@ -48,6 +49,10 @@ NSString *const adFilterIntegratedMenuReuseViewReuseIdentifier = @"adFilterInteg
     NSLayoutConstraint *collectionRight = [NSLayoutConstraint constraintWithItem:_collectionView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeRight multiplier:1.0 constant:0];
     NSLayoutConstraint *collectionBottom = [NSLayoutConstraint constraintWithItem:_collectionView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self.contentView attribute:NSLayoutAttributeBottom multiplier:1.0 constant:0];
     [self.contentView addConstraints:@[collectionTop, collectionLeft, collectionRight, collectionBottom]];
+}
+
+- (void)reloadData {
+    [_collectionView reloadData];
 }
 
 - (CGFloat)contentHeight {

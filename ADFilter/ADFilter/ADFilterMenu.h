@@ -24,6 +24,7 @@
 - (void)selectedItemAtIndexPaths:(NSArray <NSIndexPath *>*)indexPaths;
 - (void)selectedItemAtSections:(NSArray <NSNumber *> *)sections;
 - (void)reloadData;
+- (void)reloadChildData;
 @end
 
 @protocol ADFilterMenuDelegate <NSObject>

@@ -81,6 +81,7 @@ NSString *const adFilterMenuSingleViewCellReuseIdentifier = @"adFilterMenuSingle
 }
 
 - (void)initialize {
+    
     _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped];
     _tableView.backgroundColor = [UIColor clearColor];
     _tableView.delegate = self;
@@ -170,5 +171,6 @@ NSString *const adFilterMenuSingleViewCellReuseIdentifier = @"adFilterMenuSingle
         [self.delegate filterMenu:self didSelectedItemAtIndexPath:indexPath];
     }
 }
+
 
 @end

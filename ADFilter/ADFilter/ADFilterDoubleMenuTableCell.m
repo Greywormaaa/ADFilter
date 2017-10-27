@@ -74,7 +74,15 @@
     }
     _contentLab.text = data;
 }
-
+//
+//- (void)setSelected:(BOOL)selected {
+//    if (selected) {
+//        self.contentView.backgroundColor = [UIColor whiteColor];
+//    }
+//    else {
+//        self.contentView.backgroundColor = kAdFilterHexColor(0xf5f5f5);
+//    }
+//}
 
 @end
 
