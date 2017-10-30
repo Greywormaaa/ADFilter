@@ -100,6 +100,14 @@
 
 }
 
+- (NSArray<NSIndexPath *> *)indexPathsForSelectedRows {
+    return nil;
+}
+
+- (NSArray<NSNumber *> *)sectionsForSelected {
+    return nil;
+}
+
 - (void)reloadData {
 
 }

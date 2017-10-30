@@ -51,6 +51,14 @@ NSString *const adFilterIntegratedMenuReuseViewReuseIdentifier = @"adFilterInteg
     [self.contentView addConstraints:@[collectionTop, collectionLeft, collectionRight, collectionBottom]];
 }
 
+- (void)selectedItemAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths {
+    [_collectionView selectItemAtIndexPath:indexPaths.lastObject animated:YES scrollPosition:UICollectionViewScrollPositionNone];
+}
+
+- (NSArray<NSIndexPath *> *)indexPathsForSelectedRows {
+    return _collectionView.indexPathsForSelectedItems;
+}
+
 - (void)reloadData {
     [_collectionView reloadData];
 }

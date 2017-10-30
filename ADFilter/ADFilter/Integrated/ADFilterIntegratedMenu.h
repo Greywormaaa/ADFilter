@@ -7,7 +7,9 @@
 //
 
 #import "ADFilterMenu.h"
-
+/**
+     筛选菜单
+ */
 @interface ADFilterIntegratedMenu : ADFilterMenu
 
 @end

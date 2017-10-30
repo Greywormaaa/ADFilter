@@ -70,6 +70,8 @@
         [filter setTitle:@"zzzass" zone:zone];
         [filter dismissMenuViewAtZone:zone animation:NO];
     }
+    ADFilterMenu *menu = [filter menuWithZone:zone];
+    NSLog(@"seeeee : %@", [menu indexPathsForSelectedRows]);
 }
 
 - (void)filter:(ADFilter *)filter didSelectedItemAtSection:(NSInteger)section zone:(NSInteger)zone {

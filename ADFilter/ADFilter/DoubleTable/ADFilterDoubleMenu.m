@@ -85,6 +85,26 @@ NSString *const adFilterDoubleMenuChildCellReuseIdentifier = @"adFilterDoubleMen
     [_childTableView reloadData];
 }
 
+- (NSArray<NSIndexPath *> *)indexPathsForSelectedRows {
+    NSMutableArray *rows = [NSMutableArray array];
+    if (_parentTableView.indexPathsForSelectedRows.count) {
+        NSInteger section = _parentTableView.indexPathsForSelectedRows.lastObject.row;
+        for (NSIndexPath *childIndexPath in _childTableView.indexPathsForSelectedRows) {
+            NSIndexPath *indexPath = [NSIndexPath indexPathForRow:childIndexPath.row inSection:section];
+            [rows addObject:indexPath];
+        }
+    }
+    return  rows.copy;
+}
+
+- (NSArray<NSNumber *> *)sectionsForSelected {
+    NSMutableArray *sections = [NSMutableArray array];
+    for (NSIndexPath *indexPath in _parentTableView.indexPathsForSelectedRows) {
+        [sections addObject:@(indexPath.row)];
+    }
+    return sections.copy;
+}
+
 - (NSInteger)parentTableViewSelectedIndex {
     NSIndexPath *indexPath = [_parentTableView indexPathForSelectedRow];
     return indexPath.row;

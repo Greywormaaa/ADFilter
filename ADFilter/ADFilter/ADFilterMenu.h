@@ -21,8 +21,10 @@
 @property (nonatomic, copy)NSString *title;
 - (void)appearWithFrame:(CGRect)frame animation:(BOOL)animation;
 - (void)disappearWithAnimation:(BOOL)animation;
-- (void)selectedItemAtIndexPaths:(NSArray <NSIndexPath *>*)indexPaths;
+- (void)selectedItemAtIndexPaths:(NSArray <NSIndexPath *> *)indexPaths;
 - (void)selectedItemAtSections:(NSArray <NSNumber *> *)sections;
+- (NSArray <NSIndexPath *> *)indexPathsForSelectedRows;
+- (NSArray <NSNumber *> *)sectionsForSelected;
 - (void)reloadData;
 - (void)reloadChildData;
 @end

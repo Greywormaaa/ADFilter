@@ -89,7 +89,6 @@ NSString *const adFilterMenuSingleViewCellReuseIdentifier = @"adFilterMenuSingle
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     [_tableView registerClass:[ADFilterMenuSingleViewCell class] forCellReuseIdentifier:adFilterMenuSingleViewCellReuseIdentifier];
     [self.contentView addSubview:_tableView];
-    
     [self makeConstraints];
 }
 
@@ -117,6 +116,10 @@ NSString *const adFilterMenuSingleViewCellReuseIdentifier = @"adFilterMenuSingle
 - (void)selectedItemAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths {
     NSIndexPath *indexPath = indexPaths.lastObject;
     [_tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionMiddle];
+}
+
+- (NSArray<NSIndexPath *> *)indexPathsForSelectedRows {
+    return _tableView.indexPathsForSelectedRows;
 }
 
 - (void)reloadData {

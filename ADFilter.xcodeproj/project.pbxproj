@@ -8,17 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1400CB061F6146EE00E1DE05 /* ADFilterMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1400CB051F6146EE00E1DE05 /* ADFilterMenu.m */; };
-		1400CB131F6245A300E1DE05 /* ADFilterSingleMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 1400CB121F6245A300E1DE05 /* ADFilterSingleMenu.m */; };
 		147BB0621F68D7D8004E7865 /* ADFilterCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 147BB0611F68D7D8004E7865 /* ADFilterCommon.m */; };
 		147BB0651F692586004E7865 /* ADFilterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 147BB0641F692586004E7865 /* ADFilterFactory.m */; };
-		147BB0681F6925BA004E7865 /* ADFilterFactory+Single.m in Sources */ = {isa = PBXBuildFile; fileRef = 147BB0671F6925BA004E7865 /* ADFilterFactory+Single.m */; };
-		14BECBC91F6B621200B007FE /* ADFilterFactory+Double.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BECBC81F6B621200B007FE /* ADFilterFactory+Double.m */; };
-		14BECBCC1F6B624700B007FE /* ADFilterDoubleMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BECBCB1F6B624700B007FE /* ADFilterDoubleMenu.m */; };
-		14BECBCF1F6B6B0800B007FE /* ADFilterDoubleMenuTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BECBCE1F6B6B0800B007FE /* ADFilterDoubleMenuTableCell.m */; };
-		14BECBD21F6BB89700B007FE /* ADFilterIntegratedMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BECBD11F6BB89700B007FE /* ADFilterIntegratedMenu.m */; };
-		14BECBD51F6BB8AE00B007FE /* ADFilterFactory+Integrated.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BECBD41F6BB8AE00B007FE /* ADFilterFactory+Integrated.m */; };
-		14BECBD81F6BBC4400B007FE /* ADFilterIntegratedMuneItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BECBD71F6BBC4400B007FE /* ADFilterIntegratedMuneItem.m */; };
-		14BECBDB1F6BBC6C00B007FE /* ADFilterIntegratedReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14BECBDA1F6BBC6C00B007FE /* ADFilterIntegratedReusableView.m */; };
 		14F21ED61F5697B10032116D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F21ED51F5697B10032116D /* main.m */; };
 		14F21ED91F5697B10032116D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F21ED81F5697B10032116D /* AppDelegate.m */; };
 		14F21EDC1F5697B10032116D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F21EDB1F5697B10032116D /* ViewController.m */; };
@@ -27,34 +18,25 @@
 		14F21EE41F5697B10032116D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F21EE21F5697B10032116D /* LaunchScreen.storyboard */; };
 		14F21EEE1F56A4DE0032116D /* ADFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F21EED1F56A4DE0032116D /* ADFilter.m */; };
 		14F21EF11F56AA010032116D /* ADFilterCollectionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F21EF01F56AA010032116D /* ADFilterCollectionItem.m */; };
+		14F606981FA71F9E00A9AF8D /* ADFilterDoubleMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F606851FA71F9D00A9AF8D /* ADFilterDoubleMenu.m */; };
+		14F606991FA71F9E00A9AF8D /* ADFilterDoubleMenuTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F606871FA71F9D00A9AF8D /* ADFilterDoubleMenuTableCell.m */; };
+		14F6069A1FA71F9E00A9AF8D /* ADFilterFactory+Double.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F606891FA71F9D00A9AF8D /* ADFilterFactory+Double.m */; };
+		14F6069B1FA71F9E00A9AF8D /* ADFilterFactory+Integrated.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F6068C1FA71F9D00A9AF8D /* ADFilterFactory+Integrated.m */; };
+		14F6069C1FA71F9E00A9AF8D /* ADFilterIntegratedMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F6068E1FA71F9D00A9AF8D /* ADFilterIntegratedMenu.m */; };
+		14F6069D1FA71F9E00A9AF8D /* ADFilterIntegratedMuneItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F606901FA71F9D00A9AF8D /* ADFilterIntegratedMuneItem.m */; };
+		14F6069E1FA71F9E00A9AF8D /* ADFilterIntegratedReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F606921FA71F9D00A9AF8D /* ADFilterIntegratedReusableView.m */; };
+		14F6069F1FA71F9E00A9AF8D /* ADFilterFactory+Single.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F606951FA71F9E00A9AF8D /* ADFilterFactory+Single.m */; };
+		14F606A01FA71F9E00A9AF8D /* ADFilterSingleMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 14F606971FA71F9E00A9AF8D /* ADFilterSingleMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1400CB041F6146EE00E1DE05 /* ADFilterMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADFilterMenu.h; sourceTree = "<group>"; };
 		1400CB051F6146EE00E1DE05 /* ADFilterMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADFilterMenu.m; sourceTree = "<group>"; };
 		1400CB0D1F6175FF00E1DE05 /* ADFilterHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ADFilterHeader.h; sourceTree = "<group>"; };
-		1400CB111F6245A300E1DE05 /* ADFilterSingleMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADFilterSingleMenu.h; sourceTree = "<group>"; };
-		1400CB121F6245A300E1DE05 /* ADFilterSingleMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADFilterSingleMenu.m; sourceTree = "<group>"; };
 		147BB0601F68D7D8004E7865 /* ADFilterCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADFilterCommon.h; sourceTree = "<group>"; };
 		147BB0611F68D7D8004E7865 /* ADFilterCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADFilterCommon.m; sourceTree = "<group>"; };
 		147BB0631F692586004E7865 /* ADFilterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADFilterFactory.h; sourceTree = "<group>"; };
 		147BB0641F692586004E7865 /* ADFilterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADFilterFactory.m; sourceTree = "<group>"; };
-		147BB0661F6925BA004E7865 /* ADFilterFactory+Single.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ADFilterFactory+Single.h"; sourceTree = "<group>"; };
-		147BB0671F6925BA004E7865 /* ADFilterFactory+Single.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ADFilterFactory+Single.m"; sourceTree = "<group>"; };
-		14BECBC71F6B621200B007FE /* ADFilterFactory+Double.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ADFilterFactory+Double.h"; sourceTree = "<group>"; };
-		14BECBC81F6B621200B007FE /* ADFilterFactory+Double.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ADFilterFactory+Double.m"; sourceTree = "<group>"; };
-		14BECBCA1F6B624700B007FE /* ADFilterDoubleMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADFilterDoubleMenu.h; sourceTree = "<group>"; };
-		14BECBCB1F6B624700B007FE /* ADFilterDoubleMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADFilterDoubleMenu.m; sourceTree = "<group>"; };
-		14BECBCD1F6B6B0800B007FE /* ADFilterDoubleMenuTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADFilterDoubleMenuTableCell.h; sourceTree = "<group>"; };
-		14BECBCE1F6B6B0800B007FE /* ADFilterDoubleMenuTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADFilterDoubleMenuTableCell.m; sourceTree = "<group>"; };
-		14BECBD01F6BB89700B007FE /* ADFilterIntegratedMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADFilterIntegratedMenu.h; sourceTree = "<group>"; };
-		14BECBD11F6BB89700B007FE /* ADFilterIntegratedMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADFilterIntegratedMenu.m; sourceTree = "<group>"; };
-		14BECBD31F6BB8AE00B007FE /* ADFilterFactory+Integrated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ADFilterFactory+Integrated.h"; sourceTree = "<group>"; };
-		14BECBD41F6BB8AE00B007FE /* ADFilterFactory+Integrated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ADFilterFactory+Integrated.m"; sourceTree = "<group>"; };
-		14BECBD61F6BBC4400B007FE /* ADFilterIntegratedMuneItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADFilterIntegratedMuneItem.h; sourceTree = "<group>"; };
-		14BECBD71F6BBC4400B007FE /* ADFilterIntegratedMuneItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADFilterIntegratedMuneItem.m; sourceTree = "<group>"; };
-		14BECBD91F6BBC6C00B007FE /* ADFilterIntegratedReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADFilterIntegratedReusableView.h; sourceTree = "<group>"; };
-		14BECBDA1F6BBC6C00B007FE /* ADFilterIntegratedReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADFilterIntegratedReusableView.m; sourceTree = "<group>"; };
 		14F21ED11F5697B10032116D /* ADFilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADFilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F21ED51F5697B10032116D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		14F21ED71F5697B10032116D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,6 +51,24 @@
 		14F21EED1F56A4DE0032116D /* ADFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADFilter.m; sourceTree = "<group>"; };
 		14F21EEF1F56AA010032116D /* ADFilterCollectionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADFilterCollectionItem.h; sourceTree = "<group>"; };
 		14F21EF01F56AA010032116D /* ADFilterCollectionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADFilterCollectionItem.m; sourceTree = "<group>"; };
+		14F606841FA71F9D00A9AF8D /* ADFilterDoubleMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADFilterDoubleMenu.h; sourceTree = "<group>"; };
+		14F606851FA71F9D00A9AF8D /* ADFilterDoubleMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADFilterDoubleMenu.m; sourceTree = "<group>"; };
+		14F606861FA71F9D00A9AF8D /* ADFilterDoubleMenuTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADFilterDoubleMenuTableCell.h; sourceTree = "<group>"; };
+		14F606871FA71F9D00A9AF8D /* ADFilterDoubleMenuTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADFilterDoubleMenuTableCell.m; sourceTree = "<group>"; };
+		14F606881FA71F9D00A9AF8D /* ADFilterFactory+Double.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ADFilterFactory+Double.h"; sourceTree = "<group>"; };
+		14F606891FA71F9D00A9AF8D /* ADFilterFactory+Double.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ADFilterFactory+Double.m"; sourceTree = "<group>"; };
+		14F6068B1FA71F9D00A9AF8D /* ADFilterFactory+Integrated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ADFilterFactory+Integrated.h"; sourceTree = "<group>"; };
+		14F6068C1FA71F9D00A9AF8D /* ADFilterFactory+Integrated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ADFilterFactory+Integrated.m"; sourceTree = "<group>"; };
+		14F6068D1FA71F9D00A9AF8D /* ADFilterIntegratedMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADFilterIntegratedMenu.h; sourceTree = "<group>"; };
+		14F6068E1FA71F9D00A9AF8D /* ADFilterIntegratedMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADFilterIntegratedMenu.m; sourceTree = "<group>"; };
+		14F6068F1FA71F9D00A9AF8D /* ADFilterIntegratedMuneItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADFilterIntegratedMuneItem.h; sourceTree = "<group>"; };
+		14F606901FA71F9D00A9AF8D /* ADFilterIntegratedMuneItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADFilterIntegratedMuneItem.m; sourceTree = "<group>"; };
+		14F606911FA71F9D00A9AF8D /* ADFilterIntegratedReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADFilterIntegratedReusableView.h; sourceTree = "<group>"; };
+		14F606921FA71F9D00A9AF8D /* ADFilterIntegratedReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADFilterIntegratedReusableView.m; sourceTree = "<group>"; };
+		14F606941FA71F9E00A9AF8D /* ADFilterFactory+Single.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ADFilterFactory+Single.h"; sourceTree = "<group>"; };
+		14F606951FA71F9E00A9AF8D /* ADFilterFactory+Single.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ADFilterFactory+Single.m"; sourceTree = "<group>"; };
+		14F606961FA71F9E00A9AF8D /* ADFilterSingleMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADFilterSingleMenu.h; sourceTree = "<group>"; };
+		14F606971FA71F9E00A9AF8D /* ADFilterSingleMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADFilterSingleMenu.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,45 +82,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1400CAFB1F60F60200E1DE05 /* DoubleTable */ = {
-			isa = PBXGroup;
-			children = (
-				14BECBCA1F6B624700B007FE /* ADFilterDoubleMenu.h */,
-				14BECBCB1F6B624700B007FE /* ADFilterDoubleMenu.m */,
-				14BECBC71F6B621200B007FE /* ADFilterFactory+Double.h */,
-				14BECBC81F6B621200B007FE /* ADFilterFactory+Double.m */,
-				14BECBCD1F6B6B0800B007FE /* ADFilterDoubleMenuTableCell.h */,
-				14BECBCE1F6B6B0800B007FE /* ADFilterDoubleMenuTableCell.m */,
-			);
-			name = DoubleTable;
-			sourceTree = "<group>";
-		};
-		1400CAFC1F60F62800E1DE05 /* SingleTable */ = {
-			isa = PBXGroup;
-			children = (
-				1400CB111F6245A300E1DE05 /* ADFilterSingleMenu.h */,
-				1400CB121F6245A300E1DE05 /* ADFilterSingleMenu.m */,
-				147BB0661F6925BA004E7865 /* ADFilterFactory+Single.h */,
-				147BB0671F6925BA004E7865 /* ADFilterFactory+Single.m */,
-			);
-			name = SingleTable;
-			sourceTree = "<group>";
-		};
-		1400CAFD1F60F64A00E1DE05 /* Integrated */ = {
-			isa = PBXGroup;
-			children = (
-				14BECBD01F6BB89700B007FE /* ADFilterIntegratedMenu.h */,
-				14BECBD11F6BB89700B007FE /* ADFilterIntegratedMenu.m */,
-				14BECBD31F6BB8AE00B007FE /* ADFilterFactory+Integrated.h */,
-				14BECBD41F6BB8AE00B007FE /* ADFilterFactory+Integrated.m */,
-				14BECBD61F6BBC4400B007FE /* ADFilterIntegratedMuneItem.h */,
-				14BECBD71F6BBC4400B007FE /* ADFilterIntegratedMuneItem.m */,
-				14BECBD91F6BBC6C00B007FE /* ADFilterIntegratedReusableView.h */,
-				14BECBDA1F6BBC6C00B007FE /* ADFilterIntegratedReusableView.m */,
-			);
-			name = Integrated;
-			sourceTree = "<group>";
-		};
 		14F21EC81F5697B00032116D = {
 			isa = PBXGroup;
 			children = (
@@ -165,9 +126,9 @@
 		14F21EEB1F5698490032116D /* ADFilter */ = {
 			isa = PBXGroup;
 			children = (
-				1400CAFD1F60F64A00E1DE05 /* Integrated */,
-				1400CAFC1F60F62800E1DE05 /* SingleTable */,
-				1400CAFB1F60F60200E1DE05 /* DoubleTable */,
+				14F606831FA71F9D00A9AF8D /* DoubleTable */,
+				14F6068A1FA71F9D00A9AF8D /* Integrated */,
+				14F606931FA71F9E00A9AF8D /* SingleTable */,
 				1400CB0D1F6175FF00E1DE05 /* ADFilterHeader.h */,
 				147BB0601F68D7D8004E7865 /* ADFilterCommon.h */,
 				147BB0611F68D7D8004E7865 /* ADFilterCommon.m */,
@@ -181,6 +142,45 @@
 				14F21EF01F56AA010032116D /* ADFilterCollectionItem.m */,
 			);
 			path = ADFilter;
+			sourceTree = "<group>";
+		};
+		14F606831FA71F9D00A9AF8D /* DoubleTable */ = {
+			isa = PBXGroup;
+			children = (
+				14F606841FA71F9D00A9AF8D /* ADFilterDoubleMenu.h */,
+				14F606851FA71F9D00A9AF8D /* ADFilterDoubleMenu.m */,
+				14F606861FA71F9D00A9AF8D /* ADFilterDoubleMenuTableCell.h */,
+				14F606871FA71F9D00A9AF8D /* ADFilterDoubleMenuTableCell.m */,
+				14F606881FA71F9D00A9AF8D /* ADFilterFactory+Double.h */,
+				14F606891FA71F9D00A9AF8D /* ADFilterFactory+Double.m */,
+			);
+			path = DoubleTable;
+			sourceTree = "<group>";
+		};
+		14F6068A1FA71F9D00A9AF8D /* Integrated */ = {
+			isa = PBXGroup;
+			children = (
+				14F6068B1FA71F9D00A9AF8D /* ADFilterFactory+Integrated.h */,
+				14F6068C1FA71F9D00A9AF8D /* ADFilterFactory+Integrated.m */,
+				14F6068D1FA71F9D00A9AF8D /* ADFilterIntegratedMenu.h */,
+				14F6068E1FA71F9D00A9AF8D /* ADFilterIntegratedMenu.m */,
+				14F6068F1FA71F9D00A9AF8D /* ADFilterIntegratedMuneItem.h */,
+				14F606901FA71F9D00A9AF8D /* ADFilterIntegratedMuneItem.m */,
+				14F606911FA71F9D00A9AF8D /* ADFilterIntegratedReusableView.h */,
+				14F606921FA71F9D00A9AF8D /* ADFilterIntegratedReusableView.m */,
+			);
+			path = Integrated;
+			sourceTree = "<group>";
+		};
+		14F606931FA71F9E00A9AF8D /* SingleTable */ = {
+			isa = PBXGroup;
+			children = (
+				14F606941FA71F9E00A9AF8D /* ADFilterFactory+Single.h */,
+				14F606951FA71F9E00A9AF8D /* ADFilterFactory+Single.m */,
+				14F606961FA71F9E00A9AF8D /* ADFilterSingleMenu.h */,
+				14F606971FA71F9E00A9AF8D /* ADFilterSingleMenu.m */,
+			);
+			path = SingleTable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,23 +256,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14F6069B1FA71F9E00A9AF8D /* ADFilterFactory+Integrated.m in Sources */,
+				14F6069E1FA71F9E00A9AF8D /* ADFilterIntegratedReusableView.m in Sources */,
 				1400CB061F6146EE00E1DE05 /* ADFilterMenu.m in Sources */,
-				14BECBDB1F6BBC6C00B007FE /* ADFilterIntegratedReusableView.m in Sources */,
-				147BB0681F6925BA004E7865 /* ADFilterFactory+Single.m in Sources */,
-				14BECBD21F6BB89700B007FE /* ADFilterIntegratedMenu.m in Sources */,
+				14F6069F1FA71F9E00A9AF8D /* ADFilterFactory+Single.m in Sources */,
 				14F21EEE1F56A4DE0032116D /* ADFilter.m in Sources */,
 				14F21EF11F56AA010032116D /* ADFilterCollectionItem.m in Sources */,
-				1400CB131F6245A300E1DE05 /* ADFilterSingleMenu.m in Sources */,
-				14BECBD51F6BB8AE00B007FE /* ADFilterFactory+Integrated.m in Sources */,
-				14BECBCF1F6B6B0800B007FE /* ADFilterDoubleMenuTableCell.m in Sources */,
 				14F21EDC1F5697B10032116D /* ViewController.m in Sources */,
 				147BB0621F68D7D8004E7865 /* ADFilterCommon.m in Sources */,
-				14BECBC91F6B621200B007FE /* ADFilterFactory+Double.m in Sources */,
+				14F6069C1FA71F9E00A9AF8D /* ADFilterIntegratedMenu.m in Sources */,
 				14F21ED91F5697B10032116D /* AppDelegate.m in Sources */,
 				14F21ED61F5697B10032116D /* main.m in Sources */,
-				14BECBD81F6BBC4400B007FE /* ADFilterIntegratedMuneItem.m in Sources */,
-				14BECBCC1F6B624700B007FE /* ADFilterDoubleMenu.m in Sources */,
+				14F6069A1FA71F9E00A9AF8D /* ADFilterFactory+Double.m in Sources */,
+				14F606A01FA71F9E00A9AF8D /* ADFilterSingleMenu.m in Sources */,
+				14F606981FA71F9E00A9AF8D /* ADFilterDoubleMenu.m in Sources */,
 				147BB0651F692586004E7865 /* ADFilterFactory.m in Sources */,
+				14F606991FA71F9E00A9AF8D /* ADFilterDoubleMenuTableCell.m in Sources */,
+				14F6069D1FA71F9E00A9AF8D /* ADFilterIntegratedMuneItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
