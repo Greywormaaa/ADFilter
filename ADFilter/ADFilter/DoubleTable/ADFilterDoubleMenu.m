@@ -77,12 +77,20 @@ NSString *const adFilterDoubleMenuChildCellReuseIdentifier = @"adFilterDoubleMen
     NSInteger section = [self parentTableViewSelectedIndex];
     NSInteger row = indexPath.row;
     [_childTableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:row inSection:section] animated:YES scrollPosition:UITableViewScrollPositionMiddle];
+    if ([self.delegate respondsToSelector:@selector(filterMenu:didSelectedItemAtIndexPath:)]) {
+        NSInteger section = [self parentTableViewSelectedIndex];
+        NSInteger row = indexPath.row;
+        [self.delegate filterMenu:self didSelectedItemAtIndexPath:[NSIndexPath indexPathForRow:row inSection:section]];
+    }
 }
 
 - (void)selectedItemAtSections:(NSArray <NSNumber *> *)sections {
     NSInteger section = [sections.lastObject integerValue];
     [_parentTableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:section inSection:0] animated:YES scrollPosition:UITableViewScrollPositionMiddle];
     [_childTableView reloadData];
+    if ([self.delegate respondsToSelector:@selector(filterMenu:didSelectedItemAtSection:)]) {
+        [self.delegate filterMenu:self didSelectedItemAtSection:section];
+    }
 }
 
 - (NSArray<NSIndexPath *> *)indexPathsForSelectedRows {

@@ -53,6 +53,9 @@ NSString *const adFilterIntegratedMenuReuseViewReuseIdentifier = @"adFilterInteg
 
 - (void)selectedItemAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths {
     [_collectionView selectItemAtIndexPath:indexPaths.lastObject animated:YES scrollPosition:UICollectionViewScrollPositionNone];
+    if ([self.delegate respondsToSelector:@selector(filterMenu:didSelectedItemAtIndexPath:)]) {
+        [self.delegate filterMenu:self didSelectedItemAtIndexPath:indexPaths.lastObject];
+    }
 }
 
 - (NSArray<NSIndexPath *> *)indexPathsForSelectedRows {

@@ -92,7 +92,7 @@ Pod::Spec.new do |s|
   #
 
 
-  s.source_files = ['ADFilter/ADFilter/*.{h,m}']
+  s.source_files = ['ADFilter/ADFilter/**/*.{h,m}']
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -136,16 +136,16 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
 
-    s.subspec 'SingleTable' do |ss|
-    ss.source_files = ['ADFilter/ADFilter/SingleTable/*.{h,m}']
-    end
+   # s.subspec 'SingleTable' do |ss|
+   # ss.source_files = ['ADFilter/ADFilter/SingleTable/**/*.{h,m}']
+   # end
 
-    s.subspec 'DoubleTable' do |ss|
-    ss.source_files = ['ADFilter/ADFilter/DoubleTable/*.{h,m}']
-    end
+   # s.subspec 'DoubleTable' do |ss|
+   # ss.source_files = ['ADFilter/ADFilter/DoubleTable/**/*.{h,m}']
+   # end
 
-    s.subspec 'Integrated' do |ss|
-    ss.source_files = ['ADFilter/ADFilter/Integrated/*.{h,m}']
-    end
+   # s.subspec 'Integrated' do |ss|
+   # ss.source_files = ['ADFilter/ADFilter/Integrated/**/*.{h,m}']
+   # end
 
 end

@@ -64,6 +64,16 @@
     return _meeee;
 }
 
+- (void)filter:(ADFilter *)filter didSelectedItemAtZone:(NSInteger)zone {
+    ADFilterMenu *menu = [filter menuWithZone:zone];
+    if (zone == 1) {
+        [menu selectedItemAtSections:@[@0]];
+    }
+    else {
+        [menu selectedItemAtIndexPaths:@[[NSIndexPath indexPathForRow:1 inSection:0]]];
+    }
+}
+
 - (void)filter:(ADFilter *)filter didSelectedItemAtIndexPath:(NSIndexPath *)indexPath zone:(NSInteger)zone {
     NSLog(@"%ld", (long)indexPath.row);
     if (zone == 1) {
@@ -76,7 +86,7 @@
 
 - (void)filter:(ADFilter *)filter didSelectedItemAtSection:(NSInteger)section zone:(NSInteger)zone {
     _meeee = @"上天下地";
-    ADFilterMenu *men = [filter menuWithZone:zone];
-    [men reloadChildData];
+    ADFilterMenu *menu = [filter menuWithZone:zone];
+    NSLog(@"seeeee : %@", [menu sectionsForSelected]);
 }
 @end
