@@ -116,9 +116,6 @@ NSString *const adFilterMenuSingleViewCellReuseIdentifier = @"adFilterMenuSingle
 - (void)selectedItemAtIndexPaths:(NSArray<NSIndexPath *> *)indexPaths {
     NSIndexPath *indexPath = indexPaths.lastObject;
     [_tableView selectRowAtIndexPath:indexPath animated:YES scrollPosition:UITableViewScrollPositionMiddle];
-    if ([self.delegate respondsToSelector:@selector(filterMenu:didSelectedItemAtIndexPath:)]) {
-        [self.delegate filterMenu:self didSelectedItemAtIndexPath:indexPath];
-    }
 }
 
 - (NSArray<NSIndexPath *> *)indexPathsForSelectedRows {
