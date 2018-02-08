@@ -67,8 +67,8 @@ NSString *const adFilterDoubleMenuChildCellReuseIdentifier = @"adFilterDoubleMen
 }
 
 - (CGFloat)contentHeight {
-    NSInteger parentCount = 6;
-    CGFloat height = parentCount * kAdFilterFloat(44);
+    NSInteger parentCount = 7;
+    CGFloat height = parentCount * kAdFilterFloat(48);
     return height;
 }
 
@@ -147,7 +147,7 @@ NSString *const adFilterDoubleMenuChildCellReuseIdentifier = @"adFilterDoubleMen
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return kAdFilterFloat(44);
+    return kAdFilterFloat(48);
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {

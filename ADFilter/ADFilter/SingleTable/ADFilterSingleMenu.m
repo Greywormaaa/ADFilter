@@ -87,6 +87,7 @@ NSString *const adFilterMenuSingleViewCellReuseIdentifier = @"adFilterMenuSingle
     _tableView.delegate = self;
     _tableView.dataSource = self;
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    _tableView.showsVerticalScrollIndicator = NO;
     [_tableView registerClass:[ADFilterMenuSingleViewCell class] forCellReuseIdentifier:adFilterMenuSingleViewCellReuseIdentifier];
     [self.contentView addSubview:_tableView];
     [self makeConstraints];
@@ -106,10 +107,9 @@ NSString *const adFilterMenuSingleViewCellReuseIdentifier = @"adFilterMenuSingle
     if ([self.dataSource respondsToSelector:@selector(filterMenu:numberItemInSection:)]) {
         count = [self.dataSource filterMenu:self numberItemInSection:0];
     }
-    if (count > 6) {
-        count = 6;
-    }
-    CGFloat height = count * kAdFilterFloat(44);
+    
+    count = count < 7 ?: 7;
+    CGFloat height = count * kAdFilterFloat(48);
     return height;
 }
 
@@ -144,7 +144,7 @@ NSString *const adFilterMenuSingleViewCellReuseIdentifier = @"adFilterMenuSingle
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return kAdFilterFloat(44);
+    return kAdFilterFloat(48);
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {

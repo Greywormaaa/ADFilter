@@ -46,7 +46,7 @@
     if (zone == 2) {
         return 3;
     }
-    return 6;
+    return 8;
 }
 
 - (NSString *)filter:(ADFilter *)filter itemTitleAtSection:(NSInteger)section zone:(NSInteger)zone{
