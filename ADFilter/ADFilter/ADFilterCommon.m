@@ -28,10 +28,7 @@
 + (UIFont *)systemFontOfSize:(CGFloat)size andWeight:(CGFloat)weight {
     CGFloat width = CGRectGetWidth([UIScreen mainScreen].bounds);
     CGFloat scale = width / 375;
-    if (@available(iOS 8.2, *)) {
-        return [UIFont systemFontOfSize:size * scale weight:weight];
-    }
-    return [UIFont systemFontOfSize:size * scale];
+    return [UIFont systemFontOfSize:size * scale weight:weight];
 }
 
 + (CGFloat)adaptationFloatValue:(CGFloat)value {
